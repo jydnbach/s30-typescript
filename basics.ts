@@ -62,3 +62,16 @@ function print(value: any) {
   console.log(value);
 }
 // void: fn that doesnt return
+
+// Generics
+
+function insertAtBeginning<T>(array: T[], value: T) {
+  const newArray = [value, ...array];
+  return newArray;
+}
+
+const demoArray = [1, 2, 3];
+const updatedArray = insertAtBeginning(demoArray, -1); // flexible until you call it with a certain type. it's locked in and known from that point
+const stringArray = insertAtBeginning(['a', 'b', 'c'], 'd');
+
+// updatedArray[0].split('') // err: cannot split number
