@@ -19,11 +19,15 @@ isInstructor = true;
 let hobbies: string[];
 hobbies = ['fooball', 'lifting', 'drawing'];
 
-// object type
-let person: {
+// ------- type aliases -------
+
+type Person = {
   name: string;
   age: number;
 };
+
+// object type
+let person: Person;
 
 person = {
   name: 'Max',
@@ -35,10 +39,7 @@ person = {
 // };
 
 // arrays of object
-let people: {
-  name: string;
-  age: number;
-}[];
+let people: Person[];
 
 // type inference
 
