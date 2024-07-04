@@ -34,7 +34,7 @@ person = {
 //   isEmployee: true,
 // };
 
-// advance
+// arrays of object
 let people: {
   name: string;
   age: number;
