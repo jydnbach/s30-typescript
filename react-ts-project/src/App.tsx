@@ -3,7 +3,7 @@ import Todos from './components/Todo';
 function App() {
   return (
     <div>
-      <Todos />
+      <Todos items={['learn react', 'learn typescript']} />
     </div>
   );
 }
