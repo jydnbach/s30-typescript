@@ -44,3 +44,8 @@ let people: {
 
 let course = 'React'; // ts automatically infers the type
 // course = 1231; // err: bc type inference
+
+// union type
+
+let course2: string | number = 'react';
+course2 = 1231;
