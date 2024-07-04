@@ -50,3 +50,15 @@ let course = 'React'; // ts automatically infers the type
 
 let course2: string | number = 'react';
 course2 = 1231;
+
+// functions & types
+
+function add(a: number, b: number) {
+  return a + b;
+}
+// no need to set type for return due to inference
+
+function print(value: any) {
+  console.log(value);
+}
+// void: fn that doesnt return
