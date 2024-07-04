@@ -39,3 +39,8 @@ let people: {
   name: string;
   age: number;
 }[];
+
+// type inference
+
+let course = 'React'; // ts automatically infers the type
+// course = 1231; // err: bc type inference
